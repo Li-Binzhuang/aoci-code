@@ -1,0 +1,101 @@
+[
+  {
+    "name": "aoci_get_entries",
+    "required": [],
+    "properties": {
+      "dir": "string",
+      "object_refs": "any",
+      "paths": "any",
+      "volume_id": "string"
+    }
+  },
+  {
+    "name": "aoci_header",
+    "required": [],
+    "properties": {}
+  },
+  {
+    "name": "aoci_maintain",
+    "required": [],
+    "properties": {
+      "approval_request": "object",
+      "batch_id": "string",
+      "include_instructions": "boolean",
+      "intent": "string",
+      "object_refs": "array",
+      "observe_review": "object",
+      "scope": "string"
+    }
+  },
+  {
+    "name": "aoci_overview",
+    "required": [],
+    "properties": {
+      "check_only": "boolean",
+      "cognition_receipt": "any",
+      "cognition_state_version": "string",
+      "cursor": "string",
+      "delta_since": "string",
+      "host_delivery_confirmation": "object",
+      "model_cognition_attestation": "object",
+      "model_cognition_state": "string",
+      "probe": "boolean",
+      "probe_answers": "object",
+      "refresh_event_id": "string",
+      "refresh_reasons": "array",
+      "scope": "string",
+      "scope_covered": "any",
+      "stable_checkpoint": "any"
+    }
+  },
+  {
+    "name": "aoci_remove_entry",
+    "required": [
+      "path"
+    ],
+    "properties": {
+      "path": "string"
+    }
+  },
+  {
+    "name": "aoci_report",
+    "required": [
+      "note",
+      "path"
+    ],
+    "properties": {
+      "note": "string",
+      "path": "string"
+    }
+  },
+  {
+    "name": "aoci_rules",
+    "required": [],
+    "properties": {}
+  },
+  {
+    "name": "aoci_search",
+    "required": [],
+    "properties": {
+      "keyword": "string",
+      "scope": "string",
+      "tag_filter": "string"
+    }
+  },
+  {
+    "name": "aoci_update_entry",
+    "required": [],
+    "properties": {
+      "batch_id": "string",
+      "candidate_id": "string",
+      "code_batch_id": "string",
+      "entries": "any",
+      "new_entry": "string",
+      "object_ref": "string",
+      "observe_review": "object",
+      "path": "string",
+      "removals": "any",
+      "source_sha256": "string"
+    }
+  }
+]
